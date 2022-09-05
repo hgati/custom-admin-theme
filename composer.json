@@ -1,0 +1,13 @@
+{
+	"name": "hgati/custom-admin-theme",
+	"type": "magento-module",
+	"description": "Magento Custom Admin Theme for Magento 1.x",
+	"homepage": "https://github.com/hgati/custom-admin-theme",
+	"license": "MIT",
+	"authors": [{ "name": "Dennis Lee", "email": "cobays@gmail.com", "homepage": "https://github.com/hgati", "role": "Magento 1.x Developer" }],
+
+	"require": {
+		"php": ">=7.0.0",
+		"magento-hackathon/magento-composer-installer": "*"
+	}	
+}

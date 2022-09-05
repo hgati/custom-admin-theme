@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config>
+  <global>
+    <models>
+        <cobaycustomadminthemecontroller>
+             <class>Cobay_CustomAdminTheme_Controller</class>
+        </cobaycustomadminthemecontroller>
+    </models>
+    <events>
+      <adminhtml_controller_action_predispatch_start>
+        <observers>
+          <cobay_themeoverride_observer>
+            <type>singleton</type>
+            <!-- cobaycustomadminthemecontroller/observer  -->
+            <class>Cobay_CustomAdminTheme_Controller_Observer</class>
+            <method>overrideTheme</method>
+          </cobay_themeoverride_observer>
+        </observers>
+      </adminhtml_controller_action_predispatch_start>      
+    </events>
+  </global>
+  
+</config>
